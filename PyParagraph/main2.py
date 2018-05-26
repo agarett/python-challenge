@@ -25,6 +25,7 @@ with open(textpath, 'r') as txtfile:
 
         #replace all spaces and punctuation from the string to count letters
         newList = wordList.replace(" ", "").replace("[", "").replace("]","").replace("(","").replace(")","").replace(",","").replace(".","").replace("!","").replace("?","").replace(";","").replace(":","").replace('"',"").replace("-","")
+        
         #count the length of the list to get the letterCount, subtracting two for the pararentheses around the string
         letterCount = (float(len(newList) - 2))
 
