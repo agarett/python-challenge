@@ -1,15 +1,7 @@
 # python-challenge
 This project involved two separate python projects. 
 
-PyBank analyzes a CSV file with revenue information to determine:
-  -The total number of months listed in the document
-  -The total revenue over that period
-  -The average change in revenue each month
-  -The months with the largest increases and decreases in revenue
+PyBank analyzes a CSV file with revenue information to determine: the number of months listed in the document, total revenue over those months, the average change in revenue each month, and the months with the largest increases and decreases in revenue.
   
-PyParagraph reviews a txt file to calculate:
-  -The total word count
-  -The number of sentences
-  -The avereage length of each sentence
-  -The average letters in each word
+PyParagraph reviews a txt file to calculate: the total word count, the number of sentences, the avereage length of each sentence, and the average letters in each word.
   
