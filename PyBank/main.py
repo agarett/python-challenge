@@ -1,7 +1,7 @@
 import csv
 import os 
 
-csvpath = os.path.join("/Users/alex/Desktop/budget_data_2.csv")
+csvpath = os.path.join("/Users/alex/Desktop/budget_data_1.csv")
 
 totalMonths = 0 
 totalRevenue = 0
@@ -61,7 +61,9 @@ print(greatestIncrease)
 print(greatestDecrease)
 
 #print results to text file 
-with open("output2.txt", 'w') as textfile:
+with open("output1.txt", 'w') as textfile:
+    textfile.write("Financial Analysis" + "\n")
+    textfile.write("----------------------------" + "\n")
     textfile.write(totalMonths + "\n")
     textfile.write(totalRevenue + "\n")
     textfile.write(avgChangeRevenue + "\n")
