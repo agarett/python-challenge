@@ -16,6 +16,7 @@ with open(textpath, 'r') as txtfile:
         #append the text to a list and change to a string to count words 
         wordList.append(line)
         wordList = str(wordList)
+        print (wordList)
 
         #count each space; add one to account for no space at the end of a string
         wordCount = (wordList.count(" "))
@@ -33,6 +34,7 @@ with open(textpath, 'r') as txtfile:
 
     avgWordLength = letterCount/wordCount
 
+    print ("")
     print ("Paragraph Analysis")
     print ("------------------")        
     print ("Approximate Word Count: " + str(wordCount))
