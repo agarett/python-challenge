@@ -17,16 +17,18 @@ with open(textpath, 'r') as txtfile:
         wordList.append(line)
         wordList = str(wordList)
 
-        #count each space to total words and add one because there is no space at the end of the string
+        #count each space; add one to account for no space at the end of a string
         wordCount = (wordList.count(" "))
         wordCount = wordCount + 1
         
         avgSentenceLength = (wordCount/sentenceCount)
 
-        #replace all spaces and punctuation from the string to count letters
-        newList = wordList.replace(" ", "").replace("[", "").replace("]","").replace("(","").replace(")","").replace(",","").replace(".","").replace("!","").replace("?","").replace(";","").replace(":","").replace('"',"").replace("-","")
-        
-        #count the length of the list to get the letterCount, subtracting two for the pararentheses around the string
+        #replace spaces and punctuation from the string to count letters
+        newList = wordList.replace(" ", "").replace("[", "").replace("]","").replace("(",""). \
+            replace(")","").replace(",",""). replace(".","").replace("!","").replace("?",""). \
+            replace(";","").replace(":","").replace('"',"").replace("-","")
+       
+        #count the length of the list, subtract two for the pararentheses around the string
         letterCount = (float(len(newList) - 2))
 
     avgWordLength = letterCount/wordCount
