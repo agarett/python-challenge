@@ -6,7 +6,7 @@ wordList = []
 avgSentenceLength = 0 
 avgWordLength = 0
 
-textpath = os.path.join("/Users/alex/Desktop/python-challenge/PyParagraph/test.txt")
+textpath = os.path.join("PyParagraph/test.txt")
 
 with open(textpath, 'r') as txtfile:   
     for line in txtfile:
